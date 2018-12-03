@@ -1,8 +1,10 @@
 import threading
+from flask import Flask, redirect, url_for, request, render_template
 from queue import Queue
 from spider import Spider
 from domain import *
 from webscraper import *
+
 
 PROJECT_NAME = 'thesite'
 HOMEPAGE = 'http://manonthemoonstudio.com'
